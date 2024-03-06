@@ -3,7 +3,7 @@
 -- Add any additional keymaps here
 --
 --
-bind("n", "<leader>s", ":source $HOME/.config/nvim/init.lua <CR>")
+vim.keymap.set("n", "<leader>s", ":source $HOME/.config/nvim/init.lua <CR>")
 
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "x", '"_x') 
