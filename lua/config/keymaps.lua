@@ -4,9 +4,12 @@
 --
 --
 vim.keymap.set("n", "<leader>s", ":source $HOME/.config/nvim/init.lua <CR>")
+vim.keymap.set("n", "<leader>sc", ":source % <CR>")
 
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "x", '"_x') 
 
 vim.keymap.set('n', "dw", "daw")
 vim.keymap.set('n', "cw", "caw")
+vim.keymap.set('n', "vw", "vaw")
+vim.keymap.set('n', "vW", "vaW")
