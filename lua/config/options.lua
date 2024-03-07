@@ -4,3 +4,5 @@
 
 vim.cmd([[ set nolist ]])
 
+vim.wo.number = true
+vim.wo.relativenumber = true
