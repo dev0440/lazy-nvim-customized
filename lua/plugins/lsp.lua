@@ -1,4 +1,3 @@
-
 return {
   {
     "neovim/nvim-lspconfig",
@@ -6,22 +5,24 @@ return {
       servers = {
         yamlls = {
           settings = {
-            -- yaml = {
+            yaml = {
               completions = true,
               format = { enabled = true },
-              schemaStore = {
-                enabled = false,
-              },
+              -- schemaStore = {
+              --   url = "https://www.schemastore.org/api/json/catalog.json",
+              --   enabled = true,
+              -- },
               schemas = {
-                ['https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json'] = '/*.yaml'
+                ['https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json'] =
+                "/*.yaml"
               }
-          --   },
+            },
           }
         }
       }
     }
   },
-  { 
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
